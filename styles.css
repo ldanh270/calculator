@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: xx-large;
+  font-weight: 500;
+}
+html {
+  background-color: navajowhite;
+}
+
+button {
+  cursor: pointer;
+  min-height: 80px;
+  min-width: 200px;
+  border-radius: 24px;
+}
+
+#container {
+  width: 80%;
+  height: 100%;
+
+  margin: 100px auto;
+  padding: 30px;
+  gap: 16px;
+
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+#display {
+  gap: 16px;
+  padding-bottom: 16px;
+}
+
+#pre-result {
+  width: 100%;
+  min-height: 3rem;
+}
+#result {
+  width: 100%;
+  min-height: 3rem;
+}
+#btn-container {
+  display: grid;
+  grid-template-areas:
+    "function-btns function-btns function-btns calc-btns"
+    "num-btns num-btns num-btns calc-btns"
+    "num-btns num-btns num-btns calc-btns"
+    "num-btns num-btns num-btns calc-btns"
+    "num-btns num-btns num-btns calc-btns";
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 16px;
+}
+
+#calc-btns {
+  grid-area: calc-btns;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 16px;
+}
+
+.calc-btn {
+  background-color: #4b5efc;
+}
+
+#function-btns {
+  grid-area: function-btns;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.function-btn {
+  flex: 1 1 calc(33.33% - 16px);
+}
+
+#num-btns {
+  grid-area: num-btns;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.num-btn {
+  flex: 1 1 calc(33.33% - 16px);
+}
+
+/* .num-btn:nth-child(3n + 4) {
+  clear: left;
+} */
