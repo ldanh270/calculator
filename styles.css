@@ -5,6 +5,7 @@
   border: 0;
   font-size: xx-large;
   font-weight: 500;
+  user-select: none;
 }
 
 button {
@@ -32,7 +33,7 @@ button {
   padding-bottom: 16px;
 }
 
-#pre-result {
+#storage {
   width: 100%;
   min-height: 3rem;
 
@@ -40,7 +41,7 @@ button {
   font-size: 50px;
   color: #919191;
 }
-#result {
+#current {
   width: 100%;
   min-height: 3rem;
 
@@ -81,6 +82,7 @@ button {
 
 .function-btn {
   flex: 1 1 calc(33.33% - 16px);
+  background-color: #d2d3da;
 }
 
 #num-btns {

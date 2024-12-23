@@ -9,24 +9,21 @@
   <body>
     <div id="container">
       <div id="display">
-        <input type="text" id="pre-result" disabled value="123" />
-        <input type="text" id="result" disabled value="345" />
+        <input type="text" id="storage" disabled />
+        <input type="text" id="operator" disabled />
+        <input type="text" id="current" disabled />
       </div>
       <div id="btn-container">
         <div id="calc-btns">
-          <button class="calc-btn" id="=">=</button>
-          <button class="calc-btn" id="+">+</button>
-          <button class="calc-btn" id="-">–</button>
-          <button class="calc-btn" id="*">×</button>
-          <button class="calc-btn" id="/">÷</button>
+          <button id="equal">=</button>
+          <button class="calc-btn" id="add">+</button>
+          <button class="calc-btn" id="minus">–</button>
+          <button class="calc-btn" id="multiple">×</button>
+          <button class="calc-btn" id="divide">÷</button>
         </div>
         <div id="function-btns">
           <button class="function-btn" id="C">C</button>
-          <button class="function-btn" id="switch-type-number">
-            <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M18.8321 2.55469L19.3867 1.72264L17.7226 0.613235L17.1679 1.44529L5.16795 19.4453L4.61325 20.2773L6.27735 21.3867L6.83205 20.5547L18.8321 2.55469ZM5 0.999985V1.99998V3.99998H7H8V5.99998H7H5V7.99998V8.99998H3V7.99998V5.99998H1H0V3.99998H1H3V1.99998V0.999985H5ZM17 16H16V18H17H23H24V16H23H17Z" fill="black" />
-            </svg>
-          </button>
+          <button class="function-btn" id="CE">CE</button>
           <button class="function-btn" id="percent">%</button>
         </div>
         <div id="num-btns">
@@ -41,7 +38,7 @@
           <button class="num-btn" value="9">9</button>
           <button class="num-btn" value=".">.</button>
           <button class="num-btn" value="0">0</button>
-          <button class="num-btn" id="delete">
+          <button id="delete">
             <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M11.0858 7H11.5H27.5H28.5V8V24V25H27.5H11.5H11.0858L10.7929 24.7071L2.79292 16.7071L2.08582 16L2.79292 15.2929L10.7929 7.29289L11.0858 7ZM11.9142 9L4.91424 16L11.9142 23H26.5V9H11.9142ZM15.5 11.5858L16.2071 12.2929L18.5 14.5858L20.7929 12.2929L21.5 11.5858L22.9142 13L22.2071 13.7071L19.9142 16L22.2071 18.2929L22.9142 19L21.5 20.4142L20.7929 19.7071L18.5 17.4142L16.2071 19.7071L15.5 20.4142L14.0858 19L14.7929 18.2929L17.0858 16L14.7929 13.7071L14.0858 13L15.5 11.5858Z" fill="black" />
             </svg>
@@ -49,5 +46,6 @@
         </div>
       </div>
     </div>
+    <script src="./main.js"></script>
   </body>
 </html>
