@@ -29,6 +29,7 @@ const calculateResult = (currentValue, storageValue, operator) => {
   else current = parseFloat(currentValue)
   const storage = parseFloat(storageValue)
 
+  if (storageValue === "" && currentValue === "") return ""
   if (storageValue === "") return current
   if (currentValue === "") return storage
 
